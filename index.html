@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font-awesome ka cdn hai  icon lagame ke liye  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Budget Application</title>
+
+    <!-- bootstrap ke css ka cdn hai -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+    <!-- ye bootstrap ke  js ka cdn hai  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+   <style>
+    .b-border{
+        border-left: 5px solid #547EF9;
+        border-right: 5px solid #547EF9;
+    }
+    .b-border i{
+     font-size: 25px;
+    }
+   </style>
+</head>
+<body>
+    <!-- start upper section coding -->
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-2"></div>
+            <div class="col-md-8" style="border-top: 5px solid #547EF9;">
+                <div class="row">
+                   <h1 style=" color: #547EF9;">Budget Application</h1>
+                    <div class="col-md-4 shadow-lg p-4" style="border-left: 5px solid #547EF9;">
+                  <form action="" class="form">
+                    <input type="number" placeholder="Enter budget" class="form-control mb-3" id="budget">
+                    <button class="btn text-white" style="background-color: #547EF9;" id="budget-btn">Set Budget</button>
+                  </form>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-7 shadow-lg p-4" style="border-right: 5px solid #547EF9;">
+                      
+                        <form action="" class="form">
+                            <input type="text" placeholder="Enter Product title" class="form-control mb-3" id="title">
+                            <input type="number" placeholder="Enter Product cost" class="form-control mb-3" id="cost">
+                            <button class="btn text-white" style="background-color: #547EF9;" id="product-btn">Set Product</button>
+                          </form>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+          
+
+        <!-- start middle section coding -->
+        
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 p-4 mt-5" style="background-color: #547EF9;">
+                <div class="row">
+                    <div class="col-md-4 text-center text-white">
+                        <h4>Total Budget</h4>
+                        <p id="total-budget">0</p>
+                    </div>
+                    <div class="col-md-4 text-center text-white">
+                        <h4>Total Expence</h4>
+                        <p id="expence">0</p>
+                    </div>
+                    <div class="col-md-4 text-center text-white">
+                        <h4>Total Balance</h4>
+                        <p id="balance">0</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+
+        <!-- end middle section coding -->
+        
+        <div class="row mt-5">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 mb-4" style="border-top: 5px solid #547EF9; border-bottom: 5px solid #547EF9;">
+              <div id="expence-list">
+                
+              </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+
+
+    <!-- end upper section coding -->
+
+
+    <script src="script.js"></script>
+</body>
+</html>
